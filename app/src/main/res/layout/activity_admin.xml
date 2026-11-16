@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/dekut_red">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="👥" android:textSize="48sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="Administrator Portal"
+                    android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvAdminName"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:text=""
+                    android:textColor="@color/white" android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- View All Students -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewAllStudents"
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="18dp"
+            android:text="🔍 View All Students"
+            android:textSize="16sp" />
+
+        <!-- Manage Library -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageLibrary"
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="18dp"
+            android:text="📚 Manage Library Catalogue &amp; Requests"
+            android:textSize="16sp" />
+
+        <!-- Print All Students -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrintAll"
+            style="@style/ButtonSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="🖨️ Print All Students Report"
+            android:textSize="16sp" />
+
+        <!-- Info card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#E8F5E9">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="ℹ️ Admin Notes"
+                    android:textStyle="bold" android:textColor="@color/dekut_red" android:textSize="14sp"
+                    android:paddingBottom="8dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="• View All Students: browse and search all registered students.\n• Tap any student to view their complete report.\n• Print All: generates a comprehensive PDF with hostel, library, and payment details for every student.\n• Administrator role must be set in Firebase Console. It cannot be granted by the Android app."
+                    android:textColor="@color/text_primary" android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

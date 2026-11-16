@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeKUT Student Registration</string>
+    <string name="app_title">DeKUT FIRST YEAR STUDENT REGISTRATION</string>
+    <string name="app_subtitle">Register. Connect. Begin Your Journey.</string>
+    
+    <!-- Dashboard -->
+    <string name="student_registration">Student Registration</string>
+    <string name="library_books">Library Book Request</string>
+    <string name="hostel_accommodation">Hostel Accommodation</string>
+    <string name="fees_payment">Fees Payment</string>
+    <string name="my_details">My Registration Details</string>
+    <string name="admin_section">View All Students</string>
+    
+    <!-- Common -->
+    <string name="register">Register</string>
+    <string name="clear">Clear</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="sync_status">Sync Status:</string>
+    
+    <!-- Validation Messages -->
+    <string name="field_required">This field is required</string>
+    <string name="invalid_phone">Invalid phone number</string>
+    <string name="invalid_date">Invalid date selected</string>
+    <string name="registration_success">Registration successful!</string>
+    <string name="operation_failed">Operation failed. Please try again.</string>
+    
+    <!-- Courses -->
+    <string-array name="courses">
+        <item>Select Course</item>
+        <item>Bachelor of Science in Computer Science</item>
+        <item>Bachelor of Science in Information Technology</item>
+        <item>Bachelor of Business Information Technology</item>
+        <item>Bachelor of Science in Electrical and Electronic Engineering</item>
+        <item>Bachelor of Science in Mechanical Engineering</item>
+        <item>Bachelor of Commerce</item>
+        <item>Bachelor of Science in Mathematics</item>
+    </string-array>
+    
+    <!-- Departments -->
+    <string-array name="departments">
+        <item>Select Department</item>
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Engineering</item>
+        <item>Business</item>
+        <item>Mathematics and Statistics</item>
+    </string-array>
+    
+    <!-- Room Types -->
+    <string-array name="room_types">
+        <item>Select Room Type</item>
+        <item>Bedsitter</item>
+        <item>Single Room</item>
+        <item>One Bedroom</item>
+        <item>Two Bedroom</item>
+    </string-array>
+    
+    <!-- Hostel Locations -->
+    <string-array name="hostel_locations">
+        <item>Select Hostel Location</item>
+        <item>Main Campus Hostels</item>
+        <item>Off-Campus - Kimathi Town</item>
+        <item>Off-Campus - Rware</item>
+        <item>Off-Campus - Matangi</item>
+    </string-array>
+</resources>

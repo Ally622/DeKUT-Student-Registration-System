@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- DeKUT Green Brand Colors -->
+    <color name="dekut_red">#156504</color>
+    <color name="dekut_red_dark">#0D4500</color>
+    <color name="dekut_red_light">#388E3C</color>
+
+    <!-- Green Theme Colors -->
+    <color name="green_primary">#156504</color>
+    <color name="green_dark">#0D4500</color>
+    <color name="green_light">#E8F2E5</color>
+
+    <!-- UI Colors -->
+    <color name="background_light">#F7F9F6</color>
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#2E7D32</color>
+    <color name="status_pending">#FFC107</color>
+    <color name="status_error">#D32F2F</color>
+    <color name="status_info">#1976D2</color>
+</resources>

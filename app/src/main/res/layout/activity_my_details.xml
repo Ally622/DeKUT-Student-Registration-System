@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/dekut_red">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="👤 My Registration Details"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Information"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dekut_red"
+                        android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Full Names" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="16sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" android:textStyle="bold" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="National ID Number" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvIdNumber" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="16sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Registration Number" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvRegNumber" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="16sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" android:textStyle="bold" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Gender" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvGender" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="16sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Course" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvCourse" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="15sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Department" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvDepartment" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="15sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Registration Status" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvRegStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="15sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Payment Status" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvPaymentStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="15sp" android:textColor="@color/text_primary" android:paddingBottom="12dp" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Date Registered" android:textColor="@color/text_secondary" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvDateRegistered" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="15sp" android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Print Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrint"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🖨️ Print My Registration Details" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

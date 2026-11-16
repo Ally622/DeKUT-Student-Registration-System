@@ -1,0 +1,77 @@
+
+# ==============================
+# ANDROID BUILD FILES
+# ==============================
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+build/
+**/build/
+.externalNativeBuild/
+.cxx/
+captures/
+.navigation/
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# ==============================
+# ANDROID STUDIO
+# ==============================
+.idea/
+*.iml
+local.properties
+.DS_Store
+Thumbs.db
+
+# ==============================
+# ENVIRONMENT VARIABLES & SECRETS
+# ==============================
+.env
+.env.*
+!.env.example
+secrets.properties
+key.properties
+*.jks
+*.keystore
+*.pem
+*.p12
+*.pfx
+
+# ==============================
+# FIREBASE
+# ==============================
+google-services.json
+**/google-services.json
+service-account*.json
+firebase-adminsdk*.json
+
+# ==============================
+# NODE.JS BACKEND
+# ==============================
+backend/node_modules/
+backend/.env
+backend/.env.*
+backend/dist/
+backend/coverage/
+
+# Keep dependency lock files!
+# package-lock.json SHOULD be uploaded.
+
+# ==============================
+# LOGS & TEMPORARY FILES
+# ==============================
+*.log
+*.tmp
+*.bak
+*.hprof
+# Allow safe backend environment template
+!backend/.env.example

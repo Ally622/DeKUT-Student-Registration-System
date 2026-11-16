@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeKUTStudentRegistration"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- LAUNCHER: Welcome Screen -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Student Registration -->
+        <activity
+            android:name=".StudentRegistrationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".WelcomeActivity" />
+
+        <!-- Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".WelcomeActivity" />
+
+        <!-- Student Dashboard -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- My Details -->
+        <activity
+            android:name=".MyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DashboardActivity" />
+
+        <!-- Library -->
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DashboardActivity" />
+
+        <!-- Borrow Book Request Form -->
+        <activity
+            android:name=".BorrowBookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".LibraryActivity" />
+
+        <!-- Hostel -->
+        <activity
+            android:name=".HostelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DashboardActivity" />
+
+        <!-- Payment -->
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DashboardActivity" />
+
+        <!-- Admin Panel -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DashboardActivity" />
+
+        <!-- View All Students (Admin) -->
+        <activity
+            android:name=".StudentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".AdminActivity" />
+
+        <!-- Admin Library Management -->
+        <activity
+            android:name=".AdminLibraryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".AdminActivity" />
+
+        <!-- Old Main Activity (kept for back-compat but not launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

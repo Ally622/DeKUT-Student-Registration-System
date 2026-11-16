@@ -1,0 +1,46 @@
+{
+  "rules": {
+    "DeKUTRegistration": {
+      "Students": {
+        "$uid": {
+          ".read": "auth != null && (auth.uid === $uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".write": "auth != null && (auth.uid === $uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".validate": "newData.hasChildren(['uid', 'fullName', 'idNumber', 'registrationNumber'])",
+          "uid": {
+            ".validate": "newData.val() === $uid"
+          },
+          "idNumber": {
+            ".validate": "newData.isString() && newData.val().length === 9"
+          },
+          "registrationNumber": {
+            ".validate": "newData.isString() && newData.val().length > 0"
+          },
+          "role": {
+            ".validate": "newData.val() === 'STUDENT' || (auth != null && root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')"
+          }
+        }
+      },
+      "LibraryRequests": {
+        "$requestId": {
+          ".read": "auth != null && (data.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".write": "auth != null && (newData.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".validate": "newData.hasChildren(['uid', 'studentId', 'bookTitle'])"
+        }
+      },
+      "HostelRequests": {
+        "$requestId": {
+          ".read": "auth != null && (data.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".write": "auth != null && (newData.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".validate": "newData.hasChildren(['uid', 'studentId', 'hostelLocation'])"
+        }
+      },
+      "Payments": {
+        "$paymentId": {
+          ".read": "auth != null && (data.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".write": "auth != null && (newData.child('uid').val() === auth.uid || root.child('DeKUTRegistration/Students/' + auth.uid + '/role').val() === 'ADMIN')",
+          ".validate": "newData.hasChildren(['uid', 'studentId', 'amount'])"
+        }
+      }
+    }
+  }
+}
