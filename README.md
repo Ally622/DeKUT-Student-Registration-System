@@ -6,7 +6,7 @@ A complete Android application for first-year student registration at Dedan Kima
 
 - **Institution:** Dedan Kimathi University of Technology
 - **Department:** Computer Science
-- **Unit:** CCS 3211 – Mobile Systems Programming
+- **Unit:** CCS 3211 – Mobile Application Programming
 - **Year:** Third Year
 - **Developer:** Alisha - Computer Science Student
 
