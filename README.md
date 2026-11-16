@@ -8,7 +8,7 @@ A complete Android application for first-year student registration at Dedan Kima
 - **Department:** Computer Science
 - **Unit:** CCS 3211 – Mobile Systems Programming
 - **Year:** Third Year
-- **Developer:** Computer Science Student
+- **Developer:** Alisha - Computer Science Student
 
 ## Features
 
@@ -383,5 +383,5 @@ This project is developed for academic purposes at Dedan Kimathi University of T
 **Note:** This is a complete, functional application ready for demonstration and grading. All four required activities are implemented with proper offline functionality, Firebase integration, M-Pesa payment, and PDF printing capabilities.
 
 **Developer:** Third Year Computer Science Student  
-**Date:** November 2024  
+**Date:** November 2026
 **Version:** 1.0.0
